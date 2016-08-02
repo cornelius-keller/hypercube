@@ -1,4 +1,4 @@
-FROM quay.io/coreos/hyperkube:v1.3.2_coreos.0
+FROM quay.io/coreos/hyperkube:v1.3.4_coreos.0
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y && apt-get install -y wget && \
     wget -q -O- 'https://download.ceph.com/keys/release.asc' |  apt-key add - &&  \
